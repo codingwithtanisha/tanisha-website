@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About - Learn Web & Earning</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, white, #00f2fe);
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* SLIDER */
+.slider {
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 10s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    33% {margin-left: -100%;}
+    66% {margin-left: -200%;}
+}
+
+/* SECTION */
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section img {
+    width: 500px;
+    border-radius: 19px;
+}
+
+.text {
+    max-width: 600px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background: #eaf6ff;
+}
+
+.stat {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 50px;
+}
+
+.cta button {
+    padding: 15px 30px;
+    border: none;
+    background: #4facfe;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background: #00c6ff;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+        .welcome {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .welcome h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            max-width: 800px;
+            margin: auto;
+            color: #555;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>About Learn Web & Earning</h1>
+    <p>Learn Skills • Build Websites • Start Earning</p>
+</header>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+    </div>
+</div>
+<div class="welcome">
+    <h2>welcome to this page </h2>
+        <p>
+            Is platform par aap HTML, CSS aur website designing step-by-step seekhenge.
+            Aap modern responsive websites banana seekhenge jo real world me use hoti hain.
+            Saath hi aap freelancing, blogging aur online earning ke real methods seekhoge
+            jisse aap apni earning journey start kar sakte hain.
+        </p>
+</div>
+
+<!-- WHO WE ARE -->
+<div class="section">
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd">
+    <div class="text">
+        <h2>Who We Are</h2>
+        <p>
+            Hi, main Tanisha hoon aur maine Learn Web & Earning platform create kiya hai
+            beginners ke liye. Agar aap web development ya online earning start karna
+            chahte hain lekin samajh nahi aa raha kaha se start karein, to yeh platform
+            aapke liye perfect hai.
+            Learn Web & Earning ek powerful learning platform hai jo beginners ke liye design kiya gaya hai.
+            Yahan aapko web development ki basic se lekar advanced knowledge step-by-step di jati hai.
+            Bahut se log online earning start karna chahte hain lekin unhe sahi direction nahi milti,
+            isi problem ko solve karne ke liye yeh platform banaya gaya hai.
+        </p>
+        <p>
+            Yahan har concept ko simple aur practical way me samjhaya jata hai taki
+            aap bina kisi confusion ke seekh sakein.
+        </p>
+    </div>
+</div>
+
+<!-- OUR JOURNEY -->
+<div class="section">
+    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+    <div class="text">
+                <h2>What You Will Learn</h2>
+        <p>
+            Is platform par aap HTML, CSS aur website designing step-by-step seekhenge.
+            Aap modern responsive websites banana seekhenge jo real world me use hoti hain.
+        </p>
+
+        <p>
+            Saath hi aap freelancing, blogging aur online earning ke real methods seekhoge
+            jisse aap apni earning journey start kar sakte hain.
+        </p>
+        <h2>Our Journey</h2>
+        <p>
+            Is platform ki shuruaat ek simple idea se hui thi — beginners ko easy tarike se web aur earning sikhana.
+        </p>
+        <p>
+            Dheere-dheere yeh ek complete learning platform ban gaya jahan users step-by-step grow kar sakte hain.
+        </p>
+    </div>
+</div>
+
+<!-- WEBSITE PURPOSE -->
+<div class="section">
+    <div class="text">
+        <h2>What This Website Offers</h2>
+        <p>
+            Yeh website un logon ke liye hai jo ghar baithe digital skills seekhna chahte hain.
+        </p>
+        <p>
+            Aap yahan website banana, design karna aur online earning ke real methods seekh sakte hain.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7">
+</div>
+
+<!-- CARDS -->
+<div class="cards">
+    <div class="card">HTML & CSS Basics</div>
+    <div class="card">Website Design</div>
+    <div class="card">Blogging</div>
+    <div class="card">Freelancing</div>
+    <div class="card">Online Earning</div>
+</div>
+
+<!-- EARNING METHODS -->
+<div class="section">
+    <div class="text">
+        <h2>Ways to Earn Online</h2>
+        <ul>
+            <li>Freelancing (clients ke liye website banana)</li>
+            <li>Blogging & Google AdSense</li>
+            <li>Affiliate Marketing</li>
+            <li>Website Designing Services</li>
+        </ul>
+        <p>
+            Yeh sab methods real hain aur aap ghar baithe start kar sakte hain.
+        </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d">
+</div>
+
+<!-- WHY CHOOSE -->
+<div class="section">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+    <div class="text">
+        <h2>Why Choose Us</h2>
+        <p>
+            Hum sab kuch simple aur step-by-step explain karte hain taki beginners bhi easily samajh saken.
+        </p>
+        <p>
+            Yahan koi fake earning methods nahi diye jate — sirf real aur practical knowledge milta hai.
+        </p>
+    </div>
+</div>
+
+<!-- TRUST -->
+<div class="section">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+    <div class="text">
+        <h2>Why Trust Us</h2>
+        <p>
+            Hamara focus quality content dena hai jo genuinely aapko help kare.
+        </p>
+        <p>
+            Har tutorial easy language me hota hai jisse aap quickly learn kar sakte hain.
+        </p>
+    </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+    <div class="stat"><b>100+</b><br>Students</div>
+    <div class="stat"><b>50+</b><br>Tutorials</div>
+    <div class="stat"><b>100%</b><br>Free Learning</div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Start Your Journey Today 🚀</h2>
+    <p>Abhi learning start karein aur earning ki taraf badhein.</p>
+    <button onclick="alert('Start Learning Now 🚀')">Start Learning</button>
+</div>
+
+<footer>
+    <p>© 2026 Learn Web & Earning | Made by Tanisha</p>
+</footer>
+
+<script>
+let sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 300;
+        let height = sec.offsetHeight;
+
+        if(top > offset && top < offset + height){
+            sec.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
